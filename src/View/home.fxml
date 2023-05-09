@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="467.0" prefWidth="666.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banco.HomeController">
+   <children>
+      <BorderPane prefHeight="467.0" prefWidth="666.0">
+         <left>
+            <AnchorPane fx:id="menu" minHeight="0.0" minWidth="0.0" prefHeight="433.0" prefWidth="169.0" BorderPane.alignment="CENTER">
+               <children>
+                  <CubicCurve controlX1="7.800025939941406" controlX2="48.600013732910156" controlY1="-78.30000305175781" controlY2="43.79998779296875" endX="95.80001831054688" endY="-19.20269775390625" fill="#ff9e1f" layoutX="57.0" layoutY="72.0" startX="-42.60000228881836" startY="-19.20269775390625" stroke="#ffa300" />
+                  <Button fx:id="btn_menu_dados" layoutX="30.0" layoutY="103.0" mnemonicParsing="false" onAction="#menu_dados" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: orange;" text="DADOS">
+                     <font>
+                        <Font name="Malgun Gothic" size="12.0" />
+                     </font></Button>
+                  <Button fx:id="btn_menu_extrato" layoutX="31.0" layoutY="144.0" mnemonicParsing="false" onAction="#menu_extrato" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: orange;" text="EXTRATO" />
+                  <Button fx:id="btn_menu_sacar" layoutX="31.0" layoutY="191.0" mnemonicParsing="false" onAction="#menu_sacar" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: orange;" text="SACAR" />
+                  <Button fx:id="btn_menu_depositar" layoutX="31.0" layoutY="239.0" mnemonicParsing="false" onAction="#menu_depositar" prefHeight="26.0" prefWidth="88.0" style="-fx-background-color: orange;" text="DEPOSITAR" />
+                  <Button fx:id="btn_menu_transferir" layoutX="30.0" layoutY="284.0" mnemonicParsing="false" onAction="#menu_transferir" prefHeight="26.0" prefWidth="86.0" style="-fx-background-color: orange;" text="TRANSFERIR" />
+                  <Button fx:id="btn_menu_sair" layoutX="26.0" layoutY="341.0" mnemonicParsing="false" onAction="#menu_sair" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: orange;" text="SAIR" />
+                  <Label fx:id="titulo" layoutX="8.0" layoutY="23.0" minHeight="16" minWidth="69" prefHeight="58.0" prefWidth="153.0" text="Banco do Nordeste">
+                     <font>
+                        <Font name="Cambria" size="18.0" />
+                     </font>
+                  </Label>
+                  <Line endX="-13.999994277954102" endY="362.4000549316406" layoutX="182.0" layoutY="70.0" startX="-13.999994277954102" startY="-69.00000762939453" stroke="#858282b9" strokeWidth="3.0" />
+                  <ImageView fitHeight="48.0" fitWidth="44.0" layoutX="26.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cacto.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="48.0" fitWidth="44.0" layoutX="115.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cacto.png" />
+                     </image>
+                  </ImageView>
+                  <QuadCurve controlX="63.400001525878906" controlY="-71.19998168945312" endX="295.3999938964844" endY="3.0517578125E-5" fill="#ff8c00" layoutX="55.0" layoutY="467.0" startX="-62.199989318847656" startY="3.0517578125E-5" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane fx:id="conteudo" minHeight="0.0" minWidth="0.0" prefHeight="461.0" prefWidth="491.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lb_titulo" layoutX="160.0" layoutY="30.0" text="BEM-VINDO!">
+                     <font>
+                        <Font name="Century" size="21.0" />
+                     </font>
+                  </Label>
+                  <Pane fx:id="tela_dados" layoutY="-1.0" prefHeight="467.0" prefWidth="497.0" visible="false">
+                     <children>
+                        <Label fx:id="lb_cpf" layoutX="184.0" layoutY="250.0" text="CPF:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_data" layoutX="83.0" layoutY="180.0" text="Data de nascimento:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_tel" layoutX="156.0" layoutY="118.0" text="Telefone:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_rg" layoutX="191.0" layoutY="216.0" text="RG:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_login" layoutX="174.0" layoutY="150.0" text="Login:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_nome" layoutX="173.0" layoutY="80.0" prefHeight="35.0" prefWidth="47.0" text="Nome:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="tx_numconta" layoutX="234.0" layoutY="65.0" prefHeight="17.0" prefWidth="147.0" text="num_conta" />
+                        <PasswordField fx:id="tx_senha_atual" layoutX="236.0" layoutY="335.0" />
+                        <PasswordField fx:id="tf_senha_nova" layoutX="237.0" layoutY="367.0" />
+                        <TextField fx:id="tf_nome" layoutX="233.0" layoutY="85.0" />
+                        <TextField fx:id="tf_telefone" layoutX="233.0" layoutY="114.0" />
+                        <TextField fx:id="tf_login" layoutX="233.0" layoutY="146.0" />
+                        <TextField fx:id="tf_data" layoutX="233.0" layoutY="178.0" />
+                        <TextField fx:id="tf_rg" layoutX="234.0" layoutY="212.0" />
+                        <TextField fx:id="tf_cpf" layoutX="234.0" layoutY="246.0" />
+                        <Label fx:id="lb_numconta" layoutX="99.0" layoutY="65.0" text="Número da conta:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_saldo" layoutX="181.0" layoutY="278.0" text="Saldo:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_agencia" layoutX="168.0" layoutY="304.0" text="Agencia:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_senha_atual" layoutX="113.0" layoutY="339.0" text="Confimar senha:">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lb_nova_senha" layoutX="79.0" layoutY="371.0" text="Nova senha(opcional):">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Label>
+                        <ChoiceBox fx:id="cb_agencia" layoutX="237.0" layoutY="301.0" prefWidth="150.0" />
+                        <Label fx:id="lb_erro_dados" layoutX="180.0" layoutY="436.0" prefHeight="17.0" prefWidth="129.0" visible="false" />
+                        <Label fx:id="tx_saldo_dados" layoutX="237.0" layoutY="279.0" prefHeight="17.0" prefWidth="147.0" text="saldo" />
+                        <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="411.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btn_alterardados" layoutX="109.0" layoutY="401.0" mnemonicParsing="false" onAction="#alterar_dados" style="-fx-background-color: orange;" text="ALTERAR DADOS" />
+                        <Button fx:id="btn_excluir" layoutX="267.0" layoutY="401.0" mnemonicParsing="false" onAction="#excluir" style="-fx-background-color: orange;" text="EXCLUIR CONTA" />
+                        <QuadCurve controlX="217.0" controlY="-39.999969482421875" endX="295.3999938964844" endY="3.0517578125E-5" fill="#ff8c00" layoutX="-163.0" layoutY="466.0" startX="141.39999389648438" startY="-25.20001220703125" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                     </children>
+                  </Pane>
+                  <Pane fx:id="tela_operacoes" layoutX="-1.0" layoutY="-1.0" prefHeight="433.0" prefWidth="467.0">
+                     <children>
+                        <Label fx:id="lb_valor" layoutX="99.0" layoutY="202.0" text="Valor da operação:">
+                           <font>
+                              <Font size="22.0" />
+                           </font></Label>
+                        <TextField fx:id="tf_valor" layoutX="286.0" layoutY="206.0" prefHeight="25.0" prefWidth="153.0" />
+                        <Label fx:id="lb_msg" layoutX="135.0" layoutY="339.0" prefHeight="20.0" prefWidth="198.0" visible="false" />
+                        <Label fx:id="tx_saldo" layoutX="225.0" layoutY="155.0" text="saldo">
+                           <font>
+                              <Font size="22.0" />
+                           </font></Label>
+                        <Label fx:id="lb_saldo" layoutX="103.0" layoutY="155.0" text="Saldo atual:">
+                           <font>
+                              <Font size="22.0" />
+                           </font></Label>
+                        <Pane fx:id="tela_sacar" layoutX="48.0" layoutY="265.0" prefHeight="53.0" prefWidth="353.0" visible="false">
+                           <children>
+                              <Button fx:id="btn_sacar" layoutX="113.0" layoutY="12.0" mnemonicParsing="false" onAction="#sacar" style="-fx-background-color: orange;" text="REALIZAR SAQUE" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="tela_depositar" layoutX="48.0" layoutY="268.0" prefHeight="53.0" prefWidth="353.0" visible="false">
+                           <children>
+                              <Button fx:id="btn_depositar" layoutX="113.0" layoutY="12.0" mnemonicParsing="false" onAction="#depositar" style="-fx-background-color: orange;" text="REALIZAR DEPOSITO" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="tela_transferir" layoutX="80.0" layoutY="265.0" prefHeight="112.0" prefWidth="334.0">
+                           <children>
+                              <Button fx:id="btn_transferir" layoutX="86.0" layoutY="29.0" mnemonicParsing="false" onAction="#transferir" style="-fx-background-color: orange;" text="REALIZAR TRANFERÊNCIA" />
+                              <Label fx:id="lb_destinatario" layoutX="14.0" layoutY="-11.0" text="cpf da conta de destino:">
+                                 <font>
+                                    <Font size="22.0" />
+                                 </font></Label>
+                              <TextField fx:id="tf_destinatario" layoutX="249.0" layoutY="-8.0" prefHeight="25.0" prefWidth="106.0" />
+                           </children>
+                        </Pane>
+                        <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="424.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                     </children></Pane>
+                  <Pane fx:id="tela_extrato" prefHeight="467.0" prefWidth="497.0" visible="false">
+                     <children>
+                        <TableView fx:id="tabela_extrato" layoutX="-1.0" layoutY="68.0" prefHeight="330.0" prefWidth="498.0">
+                          <columns>
+                            <TableColumn fx:id="coluna_data" prefWidth="128.66672265529633" text="data" />
+                            <TableColumn fx:id="coluna_valor" prefWidth="56.6666259765625" text="valor" />
+                              <TableColumn fx:id="coluna_origem" prefWidth="83.33329772949219" text="origem" />
+                              <TableColumn fx:id="coluna_destino" prefWidth="87.33331298828125" text="destino" />
+                              <TableColumn fx:id="coluna_saldo" prefWidth="58.0" text="saldo" />
+                              <TableColumn fx:id="coluna_tipo" prefWidth="81.3333740234375" text="tipo" />
+                          </columns>
+                        </TableView>
+                        <ImageView fitHeight="59.0" fitWidth="55.0" layoutX="432.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="48.0" fitWidth="44.0" layoutX="43.0" layoutY="401.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@cacto.png" />
+                     </image>
+                  </ImageView>
+                  <QuadCurve controlX="217.0" controlY="-39.999969482421875" endX="274.5999755859375" endY="-11.600006103515625" fill="#ff8c00" layoutX="-153.0" layoutY="469.0" startX="141.39999389648438" startY="-25.20001220703125" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

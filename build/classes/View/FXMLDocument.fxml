@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="fx_fundo" fx:id="fx_fundo" prefHeight="625.0" prefWidth="862.0" stylesheets="@estilo_banco.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banco.FXMLDocumentController">
+    <children>
+      <Pane id="fundo" fx:id="fx_fundo2" layoutX="133.0" layoutY="48.0" prefHeight="461.0" prefWidth="615.0" stylesheets="@estilo_banco.css">
+         <children>
+            <CubicCurve controlX1="-0.5999755859375" controlX2="95.4000244140625" controlY1="-111.60000610351562" controlY2="83.59999084472656" endX="264.20001220703125" endY="-11.600006103515625" fill="#ff9e1f" layoutX="293.0" layoutY="64.0" startX="-174.2000274658203" startY="-11.600006103515625" stroke="#ffa300" />
+            <Label fx:id="titulo" layoutX="112.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="58.0" prefWidth="453.0" text="Banco do Nordeste">
+               <font>
+                  <Font name="Cambria" size="56.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" layoutX="159.0" layoutY="215.0" minHeight="16" minWidth="69" text="LOGIN:">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnlog" layoutX="279.0" layoutY="385.0" onAction="#logar" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: orange;" stylesheets="@STYLE.css" text="ENTRAR">
+               <font>
+                  <Font name="Malgun Gothic" size="12.0" />
+               </font></Button>
+            <Label fx:id="label12" layoutX="156.0" layoutY="301.0" minHeight="16" minWidth="69" text="SENHA:">
+               <font>
+                  <Font name="Century" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_login" layoutX="263.0" layoutY="215.0" prefHeight="32.0" prefWidth="196.0" />
+            <ImageView fx:id="user_img" fitHeight="88.0" fitWidth="82.0" layoutX="297.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@user.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btn_registro" layoutX="228.0" layoutY="423.0" mnemonicParsing="false" onAction="#redirecionar_registro" stylesheets="@STYLE.css" text="Não tem uma conta?clique aqui" />
+            <PasswordField fx:id="tf_senha" layoutX="260.0" layoutY="298.0" prefHeight="34.0" prefWidth="199.0" />
+         </children>
+      </Pane>
+      <ImageView fx:id="cacto" fitHeight="51.0" fitWidth="64.0" layoutX="82.0" layoutY="578.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto" fitHeight="88.0" fitWidth="100.0" layoutX="145.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto" fitHeight="51.0" fitWidth="51.0" layoutX="406.0" layoutY="547.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto" fitHeight="88.0" fitWidth="100.0" layoutX="568.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto1" fitHeight="58.0" fitWidth="59.0" layoutX="722.0" layoutY="576.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <QuadCurve controlX="251.20001220703125" controlY="-68.5999755859375" endX="737.0000610351562" endY="48.20001220703125" fill="#ff9e1f" layoutX="125.0" layoutY="604.0" startX="-134.40000915527344" startY="48.20001220703125" stroke="#ffad00" strokeType="INSIDE" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-43.0" layoutY="-35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sol.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,8 @@
+#btn_registro {
+    -fx-background-color: none;
+    -fx-text-fill: rgb(243, 157, 0);
+}
+
+#btnlog, #btn_registro:hover {
+    -fx-cursor: hand;
+}

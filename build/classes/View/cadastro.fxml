@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="660.0" prefWidth="825.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="banco.CadastroController">
+   <children>
+      <CubicCurve controlX1="-0.5999755859375" controlX2="95.4000244140625" controlY1="-111.60000610351562" controlY2="83.59999084472656" endX="264.20001220703125" endY="-11.600006103515625" fill="#ff9e1f" layoutX="399.0" layoutY="142.0" startX="-174.2000274658203" startY="-11.600006103515625" stroke="#ffa300" />
+      <Label fx:id="titulo" layoutX="216.0" layoutY="95.0" minHeight="16" minWidth="69" prefHeight="58.0" prefWidth="453.0" text="Banco do Nordeste">
+         <font>
+            <Font name="Cambria" size="56.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="cacto" fitHeight="51.0" fitWidth="64.0" layoutX="92.0" layoutY="588.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto2" fitHeight="88.0" fitWidth="100.0" layoutX="155.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cavalo" fitHeight="51.0" fitWidth="51.0" layoutX="365.0" layoutY="557.0" pickOnBounds="true" preserveRatio="true" rotate="-1.7" y="-1.0">
+         <image>
+            <Image url="@cavalo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto3" fitHeight="88.0" fitWidth="100.0" layoutX="578.0" layoutY="538.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cacto4" fitHeight="58.0" fitWidth="59.0" layoutX="732.0" layoutY="586.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cacto.png" />
+         </image>
+      </ImageView>
+      <QuadCurve controlX="251.20001220703125" controlY="-68.5999755859375" endX="716.7999877929688" endY="48.20001220703125" fill="#ff9e1f" layoutX="135.0" layoutY="614.0" startX="-134.40000915527344" startY="48.20001220703125" stroke="#ffad00" strokeType="INSIDE" />
+      <ImageView fx:id="cabana" fitHeight="51.0" fitWidth="88.0" layoutX="436.0" layoutY="560.0" pickOnBounds="true" preserveRatio="true" rotate="1.5" y="-1.0">
+         <image>
+            <Image url="@acampamento.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="tf_nome" layoutX="271.0" layoutY="224.0" prefHeight="26.0" prefWidth="363.0" />
+      <TextField fx:id="tf_cpf" layoutX="508.0" layoutY="276.0" />
+      <TextField fx:id="tf_data" layoutX="235.0" layoutY="274.0" />
+      <TextField fx:id="tf_tel" layoutX="234.0" layoutY="325.0" />
+      <TextField fx:id="tf_rg" layoutX="508.0" layoutY="326.0" />
+      <TextField fx:id="tf_login" layoutX="234.0" layoutY="369.0" />
+      <PasswordField fx:id="tf_senha" layoutX="507.0" layoutY="374.0" />
+      <Label fx:id="lb_nome" layoutX="228.0" layoutY="216.0" prefHeight="35.0" prefWidth="52.0" text="Nome:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_cpf" layoutX="481.0" layoutY="279.0" text="cpf:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_data" layoutX="101.0" layoutY="277.0" text="data de nascimento:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_tel" layoutX="176.0" layoutY="328.0" text="telefone:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_rg" layoutX="486.0" layoutY="329.0" text="rg:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_login" layoutX="193.0" layoutY="372.0" text="email:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lb_senha" layoutX="462.0" layoutY="376.0" text="senha:">
+         <font>
+            <Font name="Century" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="-44.0" layoutY="-40.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@sol.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lb_msg" layoutX="381.0" layoutY="495.0" prefHeight="35.0" prefWidth="107.0" />
+      <Button fx:id="btn_cadastrar" layoutX="402.0" layoutY="464.0" onAction="#cadastrar" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: orange;" stylesheets="@STYLE.css" text="cadastrar">
+         <font>
+            <Font name="Malgun Gothic" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fx:id="passaro1" fitHeight="42.0" fitWidth="34.0" layoutX="290.0" layoutY="531.0" pickOnBounds="true" preserveRatio="true" y="-1.0">
+         <image>
+            <Image url="@artico.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="passaro2" fitHeight="34.0" fitWidth="42.0" layoutX="682.0" layoutY="514.0" pickOnBounds="true" preserveRatio="true" rotate="-2.4" y="-1.0">
+         <image>
+            <Image url="@artico_-_Copia-removebg-preview.png" />
+         </image>
+         <rotationAxis>
+            <Point3D x="-30.0" z="1.0" />
+         </rotationAxis>
+      </ImageView>
+      <ChoiceBox fx:id="agencia" layoutX="373.0" layoutY="426.0" prefWidth="150.0" />
+      <Label fx:id="lb_agencia" layoutX="280.0" layoutY="430.0" text="Agência:" />
+   </children>
+</AnchorPane>

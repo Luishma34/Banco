@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="banco.jnlp">
+  <information>
+    <title>banco</title>
+    <vendor>davia</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="banco.jar" size="636321" download="eager" />
+    <jar href="lib\postgresql-42.5.4.jar" size="1049651" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="banco.FXMLDocumentController"  name="banco" />
+  <update check="always"/>
+</jnlp>
